@@ -1,0 +1,88 @@
+﻿<UserControl  x:Class="Login"
+              xmlns:local="clr-namespace:McMetroLauncher"
+              xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:awe="clr-namespace:Awesomium.Windows.Controls;assembly=Awesomium.Windows.Controls"
+              Width="500" Height="360" 
+              DataContext="{x:Static local:LoginViewModel.Instance}">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro.Resources;component/Icons.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.ListView.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <local:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <StackPanel>
+        <GroupBox x:Name="gb_existingaccount" Header="{DynamicResource LoginWithExistingUser}" VerticalAlignment="Top" Margin="10,10,10,0" Height="80">
+            <Grid>
+                <ComboBox x:Name="cb_existing_users" VerticalAlignment="Top" Margin="10,10,168,0" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" >
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem" BasedOn="{StaticResource MetroComboBoxItem}">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <TextBlock DockPanel.Dock="Right">
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Setter Property="Text" Value="{DynamicResource Premium}" />
+                                            <Setter Property="Foreground" Value="Green" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding userid, Converter={StaticResource userid_OnlineModeConverter}}" Value="False">
+                                                    <Setter Property="Text" Value="{DynamicResource Cracked}" />
+                                                    <Setter Property="Foreground" Value="Red" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                            </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                                <TextBlock Text="{Binding displayName}" DockPanel.Dock="Left" />
+                            </DockPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Button x:Name="btn_play" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,89,0" Width="74" Content="{DynamicResource Play}" Height="25" />
+                <Button x:Name="btn_logout" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" Width="74" Content="{DynamicResource Logout}" Height="25" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="{DynamicResource LoginWithNewAccount}" Margin="10,10,10,10" Height="250">
+            <Grid>
+                <CheckBox x:Name="cb_online_mode" Checked="UpdateValidation" Unchecked="UpdateValidation" IsChecked="{Binding OnlineMode, Mode=TwoWay, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" VerticalAlignment="Top" Margin="10,10,10,0" Height="25" Content="{DynamicResource OnlineModePremiumAccount}" VerticalContentAlignment="Center" />
+                <Label VerticalAlignment="Top" Margin="10,40,10,0" Height="26" >
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Content" Value="{DynamicResource EmailAddressOrUsername}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=cb_online_mode,Path=IsChecked}" Value="False" >
+                                    <Setter Property="Content" Value="{DynamicResource Username}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <TextBox x:Name="tb_username" Text="{Binding Path=Username, Mode=TwoWay, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True}" VerticalAlignment="Top" Margin="10,71,10,0" Height="26" />
+                <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,97,10,0" Height="26" FontSize="9" >
+                    <Hyperlink NavigateUri="https://help.mojang.com/customer/portal/articles/1233873" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="{DynamicResource WhichDoIUse}"/>
+                    </Hyperlink>
+                </TextBlock>
+                <Label VerticalAlignment="Top" Margin="10,102,10,0" Height="26" Content="{DynamicResource Password}" IsEnabled="{Binding ElementName=cb_online_mode,Path=IsChecked}" />
+                <PasswordBox x:Name="pb_password" VerticalAlignment="Top" Margin="10,133,10,0" Height="26" IsEnabled="{Binding ElementName=cb_online_mode,Path=IsChecked}" />
+                <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,159,6,0" Height="26" FontSize="9" >         
+                    <Hyperlink NavigateUri="https://help.mojang.com/customer/portal/articles/329524" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="{DynamicResource ForgotPassword}"/>
+                    </Hyperlink>
+                </TextBlock>
+                <Button x:Name="btn_register" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,182,0,-5" Width="210" Content="{DynamicResource Register}" Height="25" Click="open_register" />
+                <Button x:Name="btn_login" IsEnabled="{Binding ElementName=tb_username,Path=(Validation.HasError),Converter={StaticResource InverseBooleanConverter}}" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,182,10,-5" Width="210" Content="{DynamicResource Login}" Height="25" />
+            </Grid>
+        </GroupBox>
+
+    </StackPanel>
+</UserControl>

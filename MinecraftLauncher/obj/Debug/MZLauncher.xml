@@ -1,0 +1,850 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MZLauncher
+</name>
+</assembly>
+<members>
+<member name="T:McMetroLauncher.My.Resources.Resources">
+<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.ResourceManager">
+<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.Culture">
+<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_control_play">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_control_play_dark">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_delete">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_delete_dark">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_globe">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_globe_dark">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_page_copy">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_page_copy_dark">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_refresh">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_refresh_dark">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_social_github_octocat">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.appbar_social_github_octocat_dark">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.check_green">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.minecraft_block">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:McMetroLauncher.My.Resources.Resources.transparent64_64">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:McMetroLauncher.My.MyWpfExtension">
+ <summary>
+ Modul zum Definieren der im My-Namespace für WPF verfügbaren Eigenschaften
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:McMetroLauncher.My.MyWpfExtension.Application">
+ <summary>
+ Gibt das Anwendungsobjekt für die ausgeführte Anwendung zurück.
+ </summary>
+</member>
+<member name="P:McMetroLauncher.My.MyWpfExtension.Computer">
+ <summary>
+ Gibt Informationen über den Hostcomputer zurück.
+ </summary>
+</member>
+<member name="P:McMetroLauncher.My.MyWpfExtension.User">
+ <summary>
+ Gibt Informationen über den aktuellen Benutzer zurück. Wenn Sie die Anwendung mit den aktuellen Windows-
+ Anmeldeinformationen ausführen möchten, rufen Sie My.User.InitializeWithWindowsUser() auf.
+ </summary>
+</member>
+<member name="P:McMetroLauncher.My.MyWpfExtension.Log">
+ <summary>
+ Gibt das Anwendungsprotokoll zurück. Die Listener können in der Konfigurationsdatei der Anwendung konfiguriert werden.
+ </summary>
+</member>
+<member name="P:McMetroLauncher.My.MyWpfExtension.Windows">
+ <summary>
+ Gibt die im Projekt definierte Windows-Auflistung zurück.
+ </summary>
+</member>
+<member name="T:McMetroLauncher.JBou.Controls.FluidLayoutManager">
+ <summary>
+ Class which helps in the layout management for the FluidWrapPanel
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.GetInitialLocationOfChild(System.Int32)">
+ <summary>
+ Calculates the initial location of the child in the FluidWrapPanel
+ when the child is added.
+ </summary>
+ <param name="index">Index of the child in the FluidWrapPanel</param>
+ <returns></returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.Initialize(System.Double,System.Double,System.Double,System.Double,System.Windows.Controls.Orientation,System.Int32)">
+ <summary>
+ Initializes the FluidLayoutManager
+ </summary>
+ <param name="panelWidth">Width of the FluidWrapPanel</param>
+ <param name="panelHeight">Height of the FluidWrapPanel</param>
+ <param name="cellWidth">Width of each child in the FluidWrapPanel</param>
+ <param name="cellHeight">Height of each child in the FluidWrapPanel</param>
+ <param name="orientation">Orientation of the panel - Horizontal or Vertical</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.GetIndexFromCell(System.Int32,System.Int32)">
+ <summary>
+ Provides the index of the child (in the FluidWrapPanel's children) from the given row and column
+ </summary>
+ <param name="row">Row</param>
+ <param name="column">Column</param>
+ <returns>Index</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.GetIndexFromPoint(System.Windows.Point)">
+ <summary>
+ Provides the index of the child (in the FluidWrapPanel's children) from the given point
+ </summary>
+ <param name="p"></param>
+ <returns></returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.GetCellFromIndex(System.Int32,System.Int32@,System.Int32@)">
+ <summary>
+ Provides the row and column of the child based on its index in the FluidWrapPanel.Children
+ </summary>
+ <param name="index">Index</param>
+ <param name="row">Row</param>
+ <param name="column">Column</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.GetCellFromPoint(System.Windows.Point,System.Int32@,System.Int32@)">
+ <summary>
+ Provides the row and column of the child based on its location in the FluidWrapPanel
+ </summary>
+ <param name="p">Location of the child in the parent</param>
+ <param name="row">Row</param>
+ <param name="column">Column</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.GetPointFromCell(System.Int32,System.Int32)">
+ <summary>
+ Provides the location of the child in the FluidWrapPanel based on the given row and column
+ </summary>
+ <param name="row">Row</param>
+ <param name="column">Column</param>
+ <returns>Location of the child in the panel</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.GetPointFromIndex(System.Int32)">
+ <summary>
+ Provides the location of the child in the FluidWrapPanel based on the given row and column
+ </summary>
+ <param name="index">Index</param>
+ <returns>Location of the child in the panel</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.CreateTransform(System.Double,System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ Creates a TransformGroup based on the given Translation, Scale and Rotation
+ </summary>
+ <param name="transX">Translation in the X-axis</param>
+ <param name="transY">Translation in the Y-axis</param>
+ <param name="scaleX">Scale factor in the X-axis</param>
+ <param name="scaleY">Scale factor in the Y-axis</param>
+ <param name="rotAngle">Rotation</param>
+ <returns>TransformGroup</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.CreateTransition(System.Windows.UIElement,System.Windows.Point,System.TimeSpan,System.Windows.Media.Animation.EasingFunctionBase)">
+ <summary>
+ Creates the storyboard for animating a child from its old location to the new location.
+ The Translation and Scale properties are animated.
+ </summary>
+ <param name="element">UIElement for which the storyboard has to be created</param>
+ <param name="newLocation">New location of the UIElement</param>
+ <param name="period">Duration of animation</param>
+ <param name="easing">Easing function</param>
+ <returns>Storyboard</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.GetArrangedSize(System.Int32,System.Windows.Size)">
+ <summary>
+ Gets the total size taken up by the children after the Arrange Layout Phase
+ </summary>
+ <param name="childrenCount">Number of children</param>
+ <param name="finalSize">Available size provided by the FluidWrapPanel</param>
+ <returns>Total size</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidLayoutManager.CalculateCellsPerLine">
+ <summary>
+ Calculates the number of child items that can be accommodated in a single line
+ </summary>
+</member>
+<member name="T:McMetroLauncher.JBou.Controls.FluidMouseDragBehavior">
+ <summary>
+ Defines the Drag Behavior in the FluidWrapPanel using the Mouse
+ </summary>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidMouseDragBehavior.DragButtonProperty">
+ <summary>
+ DragButton Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidMouseDragBehavior.DragButton">
+ <summary>
+ Gets or sets the DragButton property. This dependency property 
+ indicates which Mouse button should participate in the drag interaction.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidMouseDragBehavior.OnAttached">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidMouseDragBehavior.GetParentPanel">
+ <summary>
+ Get the parent FluidWrapPanel and check if the AssociatedObject is
+ hosted inside a ListBoxItem (this scenario will occur if the FluidWrapPanel
+ is the ItemsPanel for a ListBox).
+ </summary>
+ 
+</member>
+<member name="T:McMetroLauncher.JBou.Controls.FluidWrapPanel">
+ <summary>
+ Interactions for the FluidWrapPanel
+ </summary>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.DragEasingProperty">
+ <summary>
+ DragEasing Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.DragEasing">
+ <summary>
+ Gets or sets the DragEasing property. This dependency property 
+ indicates the Easing function to be used when the user stops dragging the child and releases it.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnDragEasingChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the DragEasing property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnDragEasingChanged(System.Windows.Media.Animation.EasingFunctionBase,System.Windows.Media.Animation.EasingFunctionBase)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the DragEasing property.
+ </summary>
+ <param name="oldDragEasing">Old Value</param>
+ <param name="newDragEasing">New Value</param>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.DragOpacityProperty">
+ <summary>
+ DragOpacity Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.DragOpacity">
+ <summary>
+ Gets or sets the DragOpacity property. This dependency property 
+ indicates the opacity of the child being dragged.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.CoerceDragOpacity(System.Windows.DependencyObject,System.Object)">
+ <summary>
+ Coerces the FluidDrag Opacity to an acceptable value
+ </summary>
+ <param name="d">Dependency Object</param>
+ <param name="value">Value</param>
+ <returns>Coerced Value</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnDragOpacityChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the DragOpacity property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnDragOpacityChanged(System.Double,System.Double)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the DragOpacity property.
+ </summary>
+ <param name="oldDragOpacity">Old Value</param>
+ <param name="newDragOpacity">New Value</param>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.DragScaleProperty">
+ <summary>
+ DragScale Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.DragScale">
+ <summary>
+ Gets or sets the DragScale property. This dependency property 
+ indicates the factor by which the child should be scaled when it is dragged.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnDragScaleChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the DragScale property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnDragScaleChanged(System.Double,System.Double)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the DragScale property.
+ </summary>
+ <param name="oldDragScale">Old Value</param>
+ <param name="newDragScale">New Value</param>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.ElementEasingProperty">
+ <summary>
+ ElementEasing Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.ElementEasing">
+ <summary>
+ Gets or sets the ElementEasing property. This dependency property 
+ indicates the Easing Function to be used when the elements are rearranged.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnElementEasingChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the ElementEasing property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnElementEasingChanged(System.Windows.Media.Animation.EasingFunctionBase,System.Windows.Media.Animation.EasingFunctionBase)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the ElementEasing property.
+ </summary>
+ <param name="oldElementEasing">Old Value</param>
+ <param name="newElementEasing">New Value</param>
+ 
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.IsComposingProperty">
+ <summary>
+ IsComposing Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.IsComposing">
+ <summary>
+ Gets or sets the IsComposing property. This dependency property 
+ indicates if the FluidWrapPanel is in Composing mode.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnIsComposingChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the IsComposing property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnIsComposingChanged(System.Boolean,System.Boolean)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the IsComposing property.
+ </summary>
+ <param name="oldIsComposing">Old Value</param>
+ <param name="newIsComposing">New Value</param>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.ItemHeightProperty">
+ <summary>
+ ItemHeight Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.ItemHeight">
+ <summary>
+ Gets or sets the ItemHeight property. This dependency property 
+ indicates the height of each item.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnItemHeightChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the ItemHeight property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnItemHeightChanged(System.Double,System.Double)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the ItemHeight property.
+ </summary>
+ <param name="oldItemHeight">Old Value</param>
+ <param name="newItemHeight">New Value</param>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.ItemWidthProperty">
+ <summary>
+ ItemWidth Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.ItemWidth">
+ <summary>
+ Gets or sets the ItemWidth property. This dependency property 
+ indicates the width of each item.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnItemWidthChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the ItemWidth property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnItemWidthChanged(System.Double,System.Double)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the ItemWidth property.
+ </summary>
+ <param name="oldItemWidth">Old Value</param>
+ <param name="newItemWidth">New Value</param>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.CellsPerLineProperty">
+ <summary>
+ CellsPerLine Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.CellsPerLine">
+ <summary>
+ Gets or sets the CellsPerLine property. This dependency property 
+ indicates the amount of cells per line.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnCellsPerLineChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the CellsPerLine property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnCellsPerLineChanged(System.Double,System.Double)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the CellsPerLine property.
+ </summary>
+ <param name="oldCellsPerLine">Old Value</param>
+ <param name="newCellsPerLine">New Value</param>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.ItemsSourceProperty">
+ <summary>
+ ItemsSource Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.ItemsSource">
+ <summary>
+ Gets or sets the ItemsSource property. This dependency property 
+ indicates the bindable collection.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnItemsSourceChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the ItemsSource property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnItemsSourceChanged(System.Collections.IEnumerable,System.Collections.IEnumerable)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the ItemsSource property.
+ </summary>
+ <param name="oldItemsSource">Old Value</param>
+ <param name="newItemsSource">New Value</param>
+</member>
+<member name="F:McMetroLauncher.JBou.Controls.FluidWrapPanel.OrientationProperty">
+ <summary>
+ Orientation Dependency Property
+ </summary>
+</member>
+<member name="P:McMetroLauncher.JBou.Controls.FluidWrapPanel.Orientation">
+ <summary>
+ Gets or sets the Orientation property. This dependency property 
+ indicates the orientation of arrangement of items in the panel.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnOrientationChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+ <summary>
+ Handles changes to the Orientation property.
+ </summary>
+ <param name="d">FluidWrapPanel</param>
+ <param name="e">DependencyProperty changed event arguments</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.OnOrientationChanged(System.Windows.Controls.Orientation,System.Windows.Controls.Orientation)">
+ <summary>
+ Provides derived classes an opportunity to handle changes to the Orientation property.
+ </summary>
+ <param name="oldOrientation">Old Value</param>
+ <param name="newOrientation">New Value</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.MeasureOverride(System.Windows.Size)">
+ <summary>
+ Override for the Measure Layout Phase
+ </summary>
+ <param name="availableSize">Available Size</param>
+ <returns>Size required by the panel</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.ArrangeOverride(System.Windows.Size)">
+ <summary>
+ Override for the Arrange Layout Phase
+ </summary>
+ <param name="finalSize">Available size provided by the FluidWrapPanel</param>
+ <returns>Size taken up by the Panel</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.#ctor">
+ <summary>
+ Ctor
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.AddChildToFluidElements(System.Windows.UIElement)">
+ <summary>
+ Adds the child to the fluidElements collection and initializes its RenderTransform.
+ </summary>
+ <param name="child">UIElement</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.InitializeArrange">
+ <summary>
+ Intializes the arrangement of the children
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.UpdateFluidLayout(System.Boolean)">
+ <summary>
+ Iterates through all the fluid elements and animate their
+ movement to their new location.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.UpdateDragElementIndex(System.Int32)">
+ <summary>
+ Moves the dragElement to the new Index
+ </summary>
+ <param name="newIndex">Index of the new location</param>
+ <returns>True-if dragElement was moved otherwise False</returns>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.ClearItemsSource">
+ <summary>
+ Removes all the children from the FluidWrapPanel
+ </summary>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.BeginFluidDrag(System.Windows.UIElement,System.Windows.Point)">
+ <summary>
+ Handler for the event when the user starts dragging the dragElement.
+ </summary>
+ <param name="child">UIElement being dragged</param>
+ <param name="position">Position in the child where the user clicked</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.FluidDrag(System.Windows.UIElement,System.Windows.Point,System.Windows.Point)">
+ <summary>
+ Handler for the event when the user drags the dragElement.
+ </summary>
+ <param name="child">UIElement being dragged</param>
+ <param name="position">Position where the user clicked w.r.t. the UIElement being dragged</param>
+ <param name="positionInParent">Position where the user clicked w.r.t. the FluidWrapPanel (the parentFWPanel of the UIElement being dragged</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Controls.FluidWrapPanel.EndFluidDrag(System.Windows.UIElement,System.Windows.Point,System.Windows.Point)">
+ <summary>
+ Handler for the event when the user stops dragging the dragElement and releases it.
+ </summary>
+ <param name="child">UIElement being dragged</param>
+ <param name="position">Position where the user clicked w.r.t. the UIElement being dragged</param>
+ <param name="positionInParent">Position where the user clicked w.r.t. the FluidWrapPanel (the parentFWPanel of the UIElement being dragged</param>
+</member>
+<member name="M:McMetroLauncher.JBou.Authentication.Session.Refresh">
+ <summary>
+ Refreshes this session, so it may be used again. You will need to re-save it if you've
+ saved it to disk.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.ImageConvert.GetStringFromImage(System.Drawing.Image)">
+ <summary>
+ Konvertiert ein Bild in einen Base64-String
+ </summary>
+ <param name="image">
+ Zu konvertierendes Bild
+ </param>
+ <returns>
+ Base64 Repräsentation des Bildes
+ </returns>
+</member>
+<member name="M:McMetroLauncher.ImageConvert.GetImageFromString(System.String)">
+ <summary>
+ Konvertiert einen Base64-String zu einem Bild
+ </summary>
+ <param name="base64String">
+ Zu konvertierender String
+ </param>
+ <returns>
+ Bild das aus dem String erzeugt wird
+ </returns>
+</member>
+<member name="T:McMetroLauncher.Playerlist_Namesstring_Converter">
+ <summary>
+ Convertiert eine IList(Of ServerStatus.Playerlist.Player) zu einem String, getrennt durch neue Zeilen
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:McMetroLauncher.List_String_Converter">
+ <summary>
+ Convertiert eine IList(Of String) zu einem String, getrennt durch Kommas
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:McMetroLauncher.BindableBase">
+ <summary>
+     Implementation of <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> to simplify models.
+ </summary>
+</member>
+<member name="E:McMetroLauncher.BindableBase.PropertyChanged">
+ <summary>
+     Multicast event for property change notifications.
+ </summary>
+</member>
+<member name="M:McMetroLauncher.BindableBase.SetProperty``1(``0@,``0,System.String)">
+ <summary>
+     Checks if a property already matches a desired value.  Sets the property and
+     notifies listeners only when necessary.
+ </summary>
+ <typeparam name="T">Type of the property.</typeparam>
+ <param name="storage">Reference to a property with both getter and setter.</param>
+ <param name="value">Desired value for the property.</param>
+ <param name="propertyName">
+     Name of the property used to notify listeners.  This
+     value is optional and can be provided automatically when invoked from compilers that
+     support CallerMemberName.
+ </param>
+ <returns>
+     True if the value was changed, false if the existing value matched the
+     desired value.
+ </returns>
+</member>
+<member name="M:McMetroLauncher.BindableBase.OnPropertyChanged(System.String)">
+ <summary>
+     Notifies listeners that a property value has changed.
+ </summary>
+ <param name="propertyName">
+     Name of the property used to notify listeners.  This
+     value is optional and can be provided automatically when invoked from compilers
+     that support <see cref="T:System.Runtime.CompilerServices.CallerMemberNameAttribute" />.
+ </param>
+</member>
+<member name="T:McMetroLauncher.RelayCommand">
+ <summary>
+ A command whose sole purpose is to relay its functionality to other objects by invoking delegates. The default return value for the CanExecute method is 'true'.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:McMetroLauncher.Forge_installer">
+<summary>
+Forge_installer
+</summary>
+</member>
+<member name="M:McMetroLauncher.Forge_installer.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.Forge_ProfileEditor">
+<summary>
+Forge_ProfileEditor
+</summary>
+</member>
+<member name="M:McMetroLauncher.Forge_ProfileEditor.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.frmGetJavaPath">
+<summary>
+frmGetJavaPath
+</summary>
+</member>
+<member name="M:McMetroLauncher.frmGetJavaPath.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.LiteLoader_installer">
+<summary>
+LiteLoader_installer
+</summary>
+</member>
+<member name="M:McMetroLauncher.LiteLoader_installer.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:McMetroLauncher.MainWindow.RegisterURLProtocol(System.String,System.String,System.String)">
+ <summary>
+ Registriert ein benutzerdefiniertes URL-Protokoll für die Verwendung mit der
+ Windows-Shell, dem Internet Explorer und Office.
+ 
+ Beispiel für einen URL eines benutzerdefinierten URL-Protokolls:
+ 
+   rainbird://RemoteControl/OpenFridge/GetBeer
+ </summary>
+ <param name="protocolName">Name des Protokolls (z.B. "rainbird" für "rainbird://...")</param>
+ <param name="applicationPath">Vollständiger Dateisystem-Pfad zur EXE-Datei, die den URL bei Aufruf verarbeitet (Der komplette URL wird als Befehlszeilenparameter übergteben)</param>
+ <param name="description">Beschreibung (z.B. "URL:Rainbird Custom URL")</param>
+ +
+ 
+</member>
+<member name="M:McMetroLauncher.MainWindow.Write(System.String,McMetroLauncher.MainWindow.LogLevel)">
+ <summary>
+ Schreibt eine Zeile in die tb_ausgabe
+ </summary>
+ <param name="Line">Die Zeile, die geschrieben werden soll</param>
+ <param name="LogLevel">Das Level der Nachricht</param>
+ <remarks></remarks>
+</member>
+<member name="M:McMetroLauncher.MainWindow.Check_Account">
+ <summary>
+ Login with accesstoken. Returns true if successfully logged in, otherwise false.
+ </summary>
+ <returns>Returns true if successfully logged in, otherwise false.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:McMetroLauncher.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.Login">
+<summary>
+Login
+</summary>
+</member>
+<member name="M:McMetroLauncher.Login.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.SplashScreen">
+<summary>
+SplashScreen
+</summary>
+</member>
+<member name="M:McMetroLauncher.SplashScreen.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.Updater">
+<summary>
+Updater
+</summary>
+</member>
+<member name="M:McMetroLauncher.Updater.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.ProfileEditor">
+<summary>
+ProfileEditor
+</summary>
+</member>
+<member name="M:McMetroLauncher.ProfileEditor.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:McMetroLauncher.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:McMetroLauncher.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:McMetroLauncher.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:McMetroLauncher.XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+<summary>
+GeneratedInternalTypeHelper
+</summary>
+</member>
+<member name="M:McMetroLauncher.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+<summary>
+CreateInstance
+</summary>
+</member>
+<member name="M:McMetroLauncher.XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+<summary>
+GetPropertyValue
+</summary>
+</member>
+<member name="M:McMetroLauncher.XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+<summary>
+SetPropertyValue
+</summary>
+</member>
+<member name="M:McMetroLauncher.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+<summary>
+CreateDelegate
+</summary>
+</member>
+<member name="M:McMetroLauncher.XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+<summary>
+AddEventHandler
+</summary>
+</member>
+</members>
+</doc>

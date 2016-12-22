@@ -1,0 +1,168 @@
+Considering library net.minecraftforge:forge:1.10.2-12.18.2.2183: Not Downloading {Wrong Side}
+Considering library net.minecraft:launchwrapper:1.12: Not Downloading {Wrong Side}
+Considering library org.ow2.asm:asm-all:5.0.3: Not Downloading {Wrong Side}
+Considering library jline:jline:2.13: Not Downloading {Wrong Side}
+Considering library com.typesafe.akka:akka-actor_2.11:2.3.3
+Downloading library com.typesafe.akka:akka-actor_2.11:2.3.3
+Unpacking packed file akka-actor_2.11-2.3.3.jar.pack.xz
+  Signed
+  Checksum Length: 140942
+  Total Length:    2606968
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art5629206512519229332.pack
+Successfully unpacked packed file akka-actor_2.11-2.3.3.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library com.typesafe:config:1.2.1
+Downloading library com.typesafe:config:1.2.1
+Unpacking packed file config-1.2.1.jar.pack.xz
+  Signed
+  Checksum Length: 12246
+  Total Length:    111476
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art692003078217739489.pack
+Successfully unpacked packed file config-1.2.1.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang:scala-actors-migration_2.11:1.1.0
+Downloading library org.scala-lang:scala-actors-migration_2.11:1.1.0
+Unpacking packed file scala-actors-migration_2.11-1.1.0.jar.pack.xz
+  Signed
+  Checksum Length: 3311
+  Total Length:    52481
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art3300249613041394099.pack
+Successfully unpacked packed file scala-actors-migration_2.11-1.1.0.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang:scala-compiler:2.11.1
+Downloading library org.scala-lang:scala-compiler:2.11.1
+Unpacking packed file scala-compiler-2.11.1.jar.pack.xz
+  Signed
+  Checksum Length: 942120
+  Total Length:    9183051
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art5075673828586012177.pack
+Successfully unpacked packed file scala-compiler-2.11.1.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2
+Downloading library org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2
+Unpacking packed file scala-continuations-library_2.11-1.0.2.jar.pack.xz
+  Signed
+  Checksum Length: 2416
+  Total Length:    18871
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art774635085044511705.pack
+Successfully unpacked packed file scala-continuations-library_2.11-1.0.2.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2
+Downloading library org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2
+Unpacking packed file scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz
+  Signed
+  Checksum Length: 16815
+  Total Length:    139418
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art1257449685694729363.pack
+Successfully unpacked packed file scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang:scala-library:2.11.1
+Downloading library org.scala-lang:scala-library:2.11.1
+Unpacking packed file scala-library-2.11.1.jar.pack.xz
+  Signed
+  Checksum Length: 341368
+  Total Length:    5984083
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art7363490645508429000.pack
+Successfully unpacked packed file scala-library-2.11.1.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang:scala-parser-combinators_2.11:1.0.1
+Downloading library org.scala-lang:scala-parser-combinators_2.11:1.0.1
+Unpacking packed file scala-parser-combinators_2.11-1.0.1.jar.pack.xz
+  Signed
+  Checksum Length: 37614
+  Total Length:    273457
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art3207454999824415440.pack
+Successfully unpacked packed file scala-parser-combinators_2.11-1.0.1.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang:scala-reflect:2.11.1
+Downloading library org.scala-lang:scala-reflect:2.11.1
+Unpacking packed file scala-reflect-2.11.1.jar.pack.xz
+  Signed
+  Checksum Length: 291610
+  Total Length:    3217021
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art777819817969870145.pack
+Successfully unpacked packed file scala-reflect-2.11.1.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang:scala-swing_2.11:1.0.1
+Downloading library org.scala-lang:scala-swing_2.11:1.0.1
+Unpacking packed file scala-swing_2.11-1.0.1.jar.pack.xz
+  Signed
+  Checksum Length: 39019
+  Total Length:    888907
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art6332301541411696057.pack
+Successfully unpacked packed file scala-swing_2.11-1.0.1.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library org.scala-lang:scala-xml_2.11:1.0.2
+Downloading library org.scala-lang:scala-xml_2.11:1.0.2
+Unpacking packed file scala-xml_2.11-1.0.2.jar.pack.xz
+  Signed
+  Checksum Length: 35380
+  Total Length:    739509
+  Temp File:       C:\Users\Owner\AppData\Local\Temp\art6265405886195768086.pack
+Successfully unpacked packed file scala-xml_2.11-1.0.2.jar.pack.xz
+Checking "C:\Users\Owner\AppData\Roaming\.minecraft\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar" internal checksums
+    checksums.sha1 validated successfully
+    Jar contents validated successfully
+Considering library lzma:lzma:0.0.1: Not Downloading {Wrong Side}
+Considering library net.sf.jopt-simple:jopt-simple:4.6: Not Downloading {Wrong Side}
+Considering library java3d:vecmath:1.5.2
+Downloading library java3d:vecmath:1.5.2
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://libraries.minecraft.net/java3d/vecmath/1.5.2/vecmath-1.5.2.jar.pack.xz
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at net.minecraftforge.installer.DownloadUtils$URLISSupplier.getInput(DownloadUtils.java:457)
+	at net.minecraftforge.installer.DownloadUtils$URLISSupplier.getInput(DownloadUtils.java:445)
+	at com.google.common.io.ByteStreams$6.openStream(ByteStreams.java:989)
+	at com.google.common.io.ByteSource.copyTo(ByteSource.java:202)
+	at com.google.common.io.Files.copy(Files.java:382)
+	at net.minecraftforge.installer.DownloadUtils.downloadFile(DownloadUtils.java:375)
+	at net.minecraftforge.installer.DownloadUtils.downloadInstalledLibraries(DownloadUtils.java:64)
+	at net.minecraftforge.installer.ClientInstall.run(ClientInstall.java:131)
+	at net.minecraftforge.installer.InstallerAction.run(InstallerAction.java:43)
+	at net.minecraftforge.installer.InstallerPanel.run(InstallerPanel.java:406)
+	at net.minecraftforge.installer.SimpleInstaller.launchGui(SimpleInstaller.java:165)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:51)
+Trying unpacked library java3d:vecmath:1.5.2
+Considering library net.sf.trove4j:trove4j:3.0.3
+Downloading library net.sf.trove4j:trove4j:3.0.3
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://libraries.minecraft.net/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar.pack.xz
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at net.minecraftforge.installer.DownloadUtils$URLISSupplier.getInput(DownloadUtils.java:457)
+	at net.minecraftforge.installer.DownloadUtils$URLISSupplier.getInput(DownloadUtils.java:445)
+	at com.google.common.io.ByteStreams$6.openStream(ByteStreams.java:989)
+	at com.google.common.io.ByteSource.copyTo(ByteSource.java:202)
+	at com.google.common.io.Files.copy(Files.java:382)
+	at net.minecraftforge.installer.DownloadUtils.downloadFile(DownloadUtils.java:375)
+	at net.minecraftforge.installer.DownloadUtils.downloadInstalledLibraries(DownloadUtils.java:64)
+	at net.minecraftforge.installer.ClientInstall.run(ClientInstall.java:131)
+	at net.minecraftforge.installer.InstallerAction.run(InstallerAction.java:43)
+	at net.minecraftforge.installer.InstallerPanel.run(InstallerPanel.java:406)
+	at net.minecraftforge.installer.SimpleInstaller.launchGui(SimpleInstaller.java:165)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:51)
+Trying unpacked library net.sf.trove4j:trove4j:3.0.3
+Considering library net.minecraftforge:MercuriusUpdater:1.10.2
+Downloading library net.minecraftforge:MercuriusUpdater:1.10.2
+Trying unpacked library net.minecraftforge:MercuriusUpdater:1.10.2

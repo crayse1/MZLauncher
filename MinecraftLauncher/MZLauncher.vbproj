@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9B5CFB9-BB76-4842-9D76-F55AFEDC4EB8}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>McMetroLauncher</RootNamespace>
+    <AssemblyName>MZLauncher</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://gabrielpatzleiner.t15.org/public_html/minecraft/launcher/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.gabrielpatzleiner.tk/minecraft/launcher/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MZLauncher.xml</DocumentationFile>
+    <NoWarn>42314</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MZLauncher.xml</DocumentationFile>
+    <NoWarn>42314</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>resources\images\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E4048A92FC2D1130D9F12937A305BCB65CDD9C59</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MinecraftLauncher_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Awesomium.Core, Version=1.7.3.0, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Awesomium Technologies LLC\Awesomium SDK\1.7.3.0\wrappers\Awesomium.NET\Assemblies\Awesomium.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Awesomium.Windows.Controls, Version=1.7.2.2, Culture=neutral, PublicKeyToken=7a34e179b8b61c39, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Awesomium Technologies LLC\Awesomium SDK\1.7.2.2\wrappers\Awesomium.NET\Assemblies\Awesomium.Windows.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Craft.Net">
+      <HintPath>..\libraries\Craft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Craft.Net.Anvil">
+      <HintPath>..\libraries\Craft.Net.Anvil.dll</HintPath>
+    </Reference>
+    <Reference Include="Craft.Net.Client">
+      <HintPath>..\libraries\Craft.Net.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Craft.Net.Common">
+      <HintPath>..\libraries\Craft.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="De.TorstenMandelkow.MetroChart">
+      <HintPath>..\libraries\De.TorstenMandelkow.MetroChart.dll</HintPath>
+    </Reference>
+    <Reference Include="Exceptionless, Version=2.0.1122.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Exceptionless.2.0.1122-preview\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.dll</HintPath>
+    </Reference>
+    <Reference Include="Exceptionless.Extras">
+      <HintPath>..\packages\Exceptionless.Wpf.2.0.1122-preview\lib\net45\Exceptionless.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="Exceptionless.Models, Version=2.0.1122.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Exceptionless.2.0.1122-preview\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Exceptionless.Wpf, Version=2.0.1122.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Exceptionless.Wpf.2.0.1122-preview\lib\net45\Exceptionless.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="fNbt">
+      <HintPath>..\libraries\fNbt.dll</HintPath>
+    </Reference>
+    <Reference Include="GrayscaleEffect">
+      <HintPath>..\libraries\GrayscaleEffect.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\libraries\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=0.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libraries\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro.Resources">
+      <HintPath>..\libraries\MahApps.Metro.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkdownSharp">
+      <HintPath>..\packages\MarkdownSharp.1.13.0.0\lib\35\MarkdownSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs.Wpf">
+      <HintPath>..\libraries\Ookii.Dialogs.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libraries\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controls\ArrangePanel\ArrangePanel.vb" />
+    <Compile Include="Controls\ArrangePanel\ILayoutStrategy.vb" />
+    <Compile Include="Controls\ArrangePanel\TableLayoutStrategy.vb" />
+    <Compile Include="Controls\AspectRatioLayoutDecorator.vb" />
+    <Compile Include="Controls\BindableRichTextBox.vb" />
+    <Compile Include="Controls\FluidWrapPanel\FluidLayoutManager.vb" />
+    <Compile Include="Controls\FluidWrapPanel\FluidMouseDragBehavior.vb" />
+    <Compile Include="Controls\FluidWrapPanel\FluidWrapPanel.vb" />
+    <Compile Include="download\MinecraftDownloadManager.vb" />
+    <Compile Include="Extensions\ButtonHelper.vb" />
+    <Compile Include="Extensions\Converters\JsonConverters.vb" />
+    <Compile Include="Extensions\Converters\NullToBooleanConverter.vb" />
+    <Compile Include="Extensions\Converters\Username_Minotar_Converter.vb" />
+    <Compile Include="Extensions\Converters\ValueConverterGroup.vb" />
+    <Compile Include="Extensions\ImageAsyncHelper.vb" />
+    <Compile Include="Helpers\ExtensionMethods.vb" />
+    <Compile Include="Helpers\Helpers.vb" />
+    <Compile Include="Models\Accent-ThemeMenuData.vb" />
+    <Compile Include="Models\authenticationDatabase.vb" />
+    <Compile Include="Extensions\Converters\Converters.vb" />
+    <Compile Include="Models\CryptedTextAnimation.vb" />
+    <Compile Include="Models\Forge.vb" />
+    <Compile Include="Models\GlobalInfos.vb" />
+    <Compile Include="Models\Language.vb" />
+    <Compile Include="Models\Mods.vb" />
+    <Compile Include="ViewModels\LoginViewModel.vb" />
+    <Compile Include="ViewModels\UpdaterViewModel.vb" />
+    <Compile Include="ViewModels\LiteLoaderInstallerViewModel.vb" />
+    <Compile Include="ViewModels\ForgeInstallerViewModel.vb" />
+    <Compile Include="ViewModels\MainViewModel.vb" />
+    <Compile Include="Models\Session.vb" />
+    <Compile Include="Models\SimpleCommand.vb" />
+    <Compile Include="Models\Unpack.vb" />
+    <Compile Include="ViewModelBase\BindableBase.vb" />
+    <Compile Include="ViewModelBase\PropertyChangedBase.vb" />
+    <Compile Include="ViewModelBase\RelayCommand.vb" />
+    <Compile Include="ViewModels\MainWindowViewModel.vb" />
+    <Compile Include="Windows\Forge_installer.xaml.vb">
+      <DependentUpon>Forge_installer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Formattingcodes.vb" />
+    <Compile Include="Windows\Forge_ProfileEditor.xaml.vb">
+      <DependentUpon>Forge_ProfileEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmGetJavaPath.xaml.vb">
+      <DependentUpon>frmGetJavaPath.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LiteLoader_installer.xaml.vb">
+      <DependentUpon>LiteLoader_installer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VersionInfo.vb" />
+    <Compile Include="Windows\MainWindow.xaml.vb">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Resources.vb" />
+    <Compile Include="Windows\Login.xaml.vb">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Settings.vb" />
+    <Compile Include="Windows\SplashScreen.xaml.vb">
+      <DependentUpon>SplashScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Updater.xaml.vb">
+      <DependentUpon>Updater.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Versions.vb" />
+    <Compile Include="Models\Profiles.vb" />
+    <Compile Include="Windows\ProfileEditor.xaml.vb">
+      <DependentUpon>ProfileEditor.xaml</DependentUpon>
+    </Compile>
+    <Page Include="resources\languages\mcml.de-de.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="resources\languages\mcml.en-us.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="resources\languages\mcml.es-es.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="resources\languages\mcml.vn-vn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Forge_installer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Windows\Forge_ProfileEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmGetJavaPath.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\LiteLoader_installer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SplashScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ProfileEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Updater.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Awesomium" />
+    <Import Include="Awesomium.Core" />
+    <Import Include="Awesomium.Core.Data" />
+    <Import Include="Awesomium.Windows" />
+    <Import Include="Awesomium.Windows.Controls" />
+    <Import Include="Awesomium.Windows.Data" />
+    <Import Include="GrayscaleEffect" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="resources\fonts\Minecraft.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\fonts\Minecraftia.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\fonts\ProFontWindows.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="My Project\" />
+    <None Include="packages.config" />
+    <None Include="zInstall Files\Setup.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="resources\images\minecraft_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\images\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\images\transparent64_64.png" />
+    <Resource Include="resources\images\check_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\images\dark\appbar.delete.png" />
+    <Resource Include="resources\images\dark\appbar.refresh.png" />
+    <Resource Include="resources\images\light\appbar.delete.png" />
+    <Resource Include="resources\images\light\appbar.refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\images\forge_banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\images\light\appbar.page.copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\images\dark\appbar.page.copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\images\light\appbar.alert.png" />
+    <Resource Include="resources\images\dark\appbar.alert.png" />
+    <Resource Include="resources\languages\icons\de.png" />
+    <Resource Include="resources\languages\icons\en.png" />
+    <Resource Include="resources\languages\icons\vn.png" />
+    <Resource Include="resources\languages\icons\es.png" />
+    <Content Include="tools\Pack_xz_Extractor.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="minecraft_block.png" />
+    <Resource Include="resources\images\web-ftb-logo_0.png" />
+    <Resource Include="resources\images\light\appbar.control.play.png" />
+    <Resource Include="resources\images\dark\appbar.control.play.png" />
+    <Resource Include="resources\images\liteloader_header_xmas.png" />
+    <Resource Include="resources\images\light\appbar.social.github.octocat.png" />
+    <Resource Include="resources\images\dark\appbar.social.github.octocat.png" />
+    <Resource Include="resources\images\dark\appbar.globe.png" />
+    <Resource Include="resources\images\light\appbar.globe.png" />
+    <Content Include="resources\images\logo_technic_launcher.png" />
+    <Resource Include="resources\images\tl.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
